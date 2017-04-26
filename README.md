@@ -1,6 +1,6 @@
 # npmdoc-ng2-translate
 
-#### api documentation for  [ng2-translate (v5.0.0)](https://github.com/ocombe/ng2-translate)  [![npm package](https://img.shields.io/npm/v/npmdoc-ng2-translate.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ng2-translate) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ng2-translate.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ng2-translate)
+#### basic api documentation for  [ng2-translate (v5.0.0)](https://github.com/ocombe/ng2-translate)  [![npm package](https://img.shields.io/npm/v/npmdoc-ng2-translate.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ng2-translate) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ng2-translate.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ng2-translate)
 
 #### An implementation of angular translate for Angular 2
 
@@ -113,7 +113,8 @@
         "test-watch": "karma start --singleRun=false --autoWatch=true"
     },
     "typings": "index.d.ts",
-    "version": "5.0.0"
+    "version": "5.0.0",
+    "bin": {}
 }
 ```
 

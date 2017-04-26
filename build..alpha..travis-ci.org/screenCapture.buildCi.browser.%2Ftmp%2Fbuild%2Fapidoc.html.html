@@ -174,7 +174,23 @@
     args = Array.prototype.slice.call(arguments, 0);
     return path.join.apply(path, [ROOT].concat(args));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+module.exports = {
+devtool: 'inline-source-map',
+
+resolve: {
+    extensions: ['.ts', '.js']
+},
+
+entry: helpers.<span class="apidocCodeKeywordSpan">root</span>('ng2-translate.ts'),
+
+output: {
+    path: helpers.root('bundles'),
+    publicPath: '/',
+    filename: 'ng2-translate.umd.js',
+    libraryTarget: 'umd',
+    library: 'ng2-translate'
+...</pre></li>
     </ul>
 
 

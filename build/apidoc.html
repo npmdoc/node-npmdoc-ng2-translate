@@ -181,7 +181,23 @@
     args = Array.prototype.slice.call(arguments, 0);
     return path.join.apply(path, [ROOT].concat(args));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+module.exports = {
+devtool: &#x27;inline-source-map&#x27;,
+
+resolve: {
+    extensions: [&#x27;.ts&#x27;, &#x27;.js&#x27;]
+},
+
+entry: helpers.<span class="apidocCodeKeywordSpan">root</span>(&#x27;ng2-translate.ts&#x27;),
+
+output: {
+    path: helpers.root(&#x27;bundles&#x27;),
+    publicPath: &#x27;/&#x27;,
+    filename: &#x27;ng2-translate.umd.js&#x27;,
+    libraryTarget: &#x27;umd&#x27;,
+    library: &#x27;ng2-translate&#x27;
+...</pre></li>
     </ul>
 
 
